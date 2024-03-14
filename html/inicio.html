@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./js/main.js" type="module" defer></script>
+    <script src="../js/main.js" type="module" defer></script>
 
     <title>Acme Filmes</title>
 
@@ -25,7 +25,11 @@
                         inter: ['Inter', 'normal']
                     },
                     spacing: {
-                        oo: '180vh'
+                        oo: '180vh',
+
+                        // Padronizando o tamanho das capas dos filmes 
+                        capaWidth: '250px',
+                        capaHeight: '350px'
                     }
                 }
             }
@@ -36,15 +40,20 @@
 
 <!-- Projeto Acme Filmes - Front End usando Framework Tailwind utilizando dados da API-->
 
-<body class="bg-neutral-500">
+<body class="
+bg-neutral-
+">
 
     <header class="
-    w-full
-     h-28 
+     h-28
       bg-black
       flex 
       justify-center 
       items-center
+      fixed 
+      top-0 
+      left-0
+       right-0
       ">
 
 
@@ -67,24 +76,48 @@
         </div>
     </header>
 
-    <main>
+    <main class="">
         <div class="flex
-        p-2
+        w-10
+        pt-28
         ">
-            <p class=
-            "text-white
-            font-inter       
-            ">Novidades</p>
+            <p class="text-black
+            font-inter     
+            pt-8
+            pl-5
+
+            ">Lançamentos</p>
+
         </div>
+
+        <!-- Lupa de pesquisa de filmes -->
+        <div class="
+        flex
+        pl-oo
+        pr-20
+        gap-2
+        w-30
+        ">
+            <input class="
+        border-solid
+        rounded-lg
+        border-2
+        border-black-600
+        p-1
+    
+        " type="text" placeholder="Pesquise um filme aqui...">
+            <img class="
+            h-8
+            " src="../img/lupa.png" alt="Icon de Lupa">
+        </div>
+
+
 
         <!-- Cards dos filmes  -->
 
-        <div class="card" id="card">
-            
+        <div class="flex flex-row" id="lista">
+        
         </div>
-
-
-
 
 
     </main>
