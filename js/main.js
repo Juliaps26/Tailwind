@@ -5,23 +5,23 @@ import { getFilmes, getFilmeByID, postFilme, deleteFilme } from "./filmes.js"
 function criarCard(filme){
     // Card dos filmes 
     const card=document.createElement('div')
-    card.classList.add('grid', 'p-4')
+    card.classList.add('grid', 'p-8', 'gap-4')
 
     // Retornar o nome do filme
     const titulo=document.createElement('h2')
     titulo.textContent=filme.nome
-    titulo.classList.add('font-bold', 'grid' ,'text-white')
+    titulo.classList.add('font-inter', 'sans-serif','grid' ,'text-white', 'justify-center', 'text-lg')
 
     // Mostrar a capa dos filmes 
     const capa = document.createElement('img')
     capa.src = filme.foto_capa
-    capa.classList.add('w-capaWidth', 'h-capaHeight', 'rounded-lg', 'shadow-lg', 'p-2', 'mb-2', 'transform', 'transition', 'hover:scale-110', 'duration-300', 'max-w-sm', 'mx-auto', 'cursor-pointer')
+    capa.classList.add('w-capaWidth', 'h-capaHeight', 'rounded-lg', 'shadow-lg', 'p-2', 'mb-2', 'transform', 'transition', 'hover:scale-[1.2]', 'duration-300', 'max-w-sm', 'mx-auto', 'cursor-pointer')
     
     card.addEventListener('click', ()=>{
         window.location.href = '../info.html?id='+filme.id
     })
 
-    // Retornar a data de lancamento
+   // Retornar a data de lancamento
     // const data= document.createElement('h2', 'text-white')
     // data.textContent=filme.data_lancamento
     // data.classList.add('font-bold')
