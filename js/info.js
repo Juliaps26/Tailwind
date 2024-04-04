@@ -4,7 +4,7 @@ import { getFilmes, getFilmeByID, postFilme, deleteFilme } from "./filmes.js"
 function criarCard(filme){
     // Card dos filmes 
     const card=document.createElement('div')
-    card.classList.add('grid', 'p-4', '')
+    card.classList.add('grid', 'p-4')
 
     // Retornar o nome do filme
     const titulo=document.createElement('h2')
@@ -14,18 +14,16 @@ function criarCard(filme){
     // Mostrar a capa dos filmes 
     const capa = document.createElement('img')
     capa.src = filme.foto_capa
-    capa.classList.add('w-capaWidth', 'h-capaHeight', 'rounded-md', 'border-solid', )
+    capa.classList.add('w-capaWidth', 'h-capaHeight', 'rounded-md', 'border-solid')
     
+    
+    // Retornar a data de lancamento
+    // const data= document.createElement('h2', 'text-white')
+    // data.textContent=filme.data_lancamento
+    // data.classList.add('font-bold')
 
-     // Adiciona evento de mouseover para aumentar a imagem
-     capa.addEventListener('mouseover', function() {
-        capa.style.transform = 'scale(2)'; // aumenta a escala para 1.1 (10% maior)
-    });
-
-    // Adiciona evento de mouseout para voltar ao tamanho original
-    capa.addEventListener('mouseout', function() {
-        capa.style.transform = 'scale(1)'; // volta ao tamanho original
-    });
+    // const texto=document.createElement('textarea')
+    // texto.textContent=filme.sinopse
 
 
     card.append(capa, titulo)

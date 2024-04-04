@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<!-- OI -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <link rel="icon" href="../img/logo.png" type="image/x-icon">
     <script src="../js/main.js" type="module" defer></script>
 
     <title>Acme Filmes</title>
@@ -21,6 +16,7 @@
         tailwind.config = {
             theme: {
                 extend: {
+
                     colors: {
                         principal: '',
                         amarelo: '#F3CC4D'
@@ -40,51 +36,94 @@
 
 </head>
 
+<!-- Projeto Acme Filmes - Front End usando Framework Tailwind utilizando dados da API-->
+
 <body class="bg-zinc-600">
 
-    <header class="h-28 bg-black flex justify-center items-center fixed top-0 left-0 right-0">
+    <header class="
+     h-28
+      bg-black
+      flex 
+      justify-center 
+      items-center
+      fixed 
+      top-0 
+      left-0
+       right-0
+      ">
 
-        <!-- Logo  -->
-        <div class="flex justify-center fixed">
-            <img class="flex justify-center " src="../img/logo.png" alt="Logo Acme Filmes">
+<!-- Logo  -->
+        <div class="fixed">
+            <img class="h-20  " src="../img/logo.png" alt="Logo Acme Filmes">
         </div>
 
-        <!-- Perfil do usuario  -->
-        <div class="flex items-center justify-center pl-[110rem] flex-col">
-            <button class="">
-                <img class="fixed " src="../img/perfil.png" alt="Imagem de Perfil">
-           <a class="h-20 flex bg-black justify-center " href="../html/login.html"></a>
-                <p class="text-white justify-center flex items-center fi">Olá, Júlia!</p>
-            </button>
-            
+        <div class="
+        flex
+        flex-col
+        pl-[90%]
+        h-20
+    
+        ">
+        <!--  Perfil do usuario  -->
+            <div class="fixed">
+                <img class="pl-[10px]" src="../img/perfil.png" alt="Imagem de Perfil">
+                <p class="text-white">Olá, Júlia!</p>
+            </div>
         </div>
-
     </header>
 
-    <main class="pt-24 px-4">
 
-        <div class="flex">
-            <p class="text-black font-inter pt-8 pl-5">Lançamentos</p>
+    <main class="">
+        <div class="flex
+        w-10
+        pt-24
+        ">
+            <p class="text-black
+            font-inter     
+            pt-8
+            pl-5
+            ">Lançamentos</p>
         </div>
 
         <!-- Lupa de pesquisa de filmes -->
-        <div class="flex gap-2 justify-center mb-6">
-            <input class="rounded-lg border-2 border-black-600 p-1" type="text" placeholder="Pesquise um filme aqui...">
-            <img class="h-8" src="../img/lupa.png" alt="Icon de Lupa">
+        <div class="
+        flex
+        gap-2
+        ml-[87%]
+        mb-10
+        
+
+        ">
+            <input class="
+        border-solid
+        rounded-lg
+        border-2
+        border-black-600
+        p-1
+        
+    
+        " type="text" placeholder="Pesquise um filme aqui...">
+            <img class="
+            h-8
+            " src="../img/lupa.png" alt="Icon de Lupa">
         </div>
 
-        <!-- Cards dos filmes  -->
-        <section class="flex flex-wrap justify-center " id="lista">
-             <div class="area" id="lista">
 
-             </div>
-        </section>
-     
+
+        <!-- Cards dos filmes  -->
+
+<<<<<<< HEAD
+        <div class="flex flex-row flex-wrap ml-[100px]" id="lista">
+=======
+        <div class="flex flex-row flex-wrap" id="lista">
+>>>>>>> 2988b9e090aa4ea1458586d9b3749fc7e21a113f
+        
+        </div>
+
+
 
     </main>
-
     <footer></footer>
-
 </body>
 
 </html>
